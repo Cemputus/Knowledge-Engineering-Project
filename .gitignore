@@ -1,7 +1,25 @@
 cassava-disease/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
 
+# Model files (all .h5 files are larger than 24MB)
+*.h5
+baseline_cnn_model.h5
+efficientnet_cassava_model.h5
+mobilenet_cassava_model.h5
+best_model.h5
 
+# Large archive files
+*.zip
+*.tar.gz
+*.tar
 
+# Large ontology zip file
+ontology.zip
 
 
 
