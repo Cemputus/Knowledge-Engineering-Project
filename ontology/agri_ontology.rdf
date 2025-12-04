@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:agri="http://www.agriculture.org/ontology#"
+         xml:base="http://www.agriculture.org/ontology">
+
+  <owl:Ontology rdf:about="http://www.agriculture.org/ontology">
+    <rdfs:label>Agriculture Ontology</rdfs:label>
+  </owl:Ontology>
+
+  <!-- Classes -->
+  <owl:Class rdf:ID="Crop">
+    <rdfs:label>Crop</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Maize">
+    <rdfs:subClassOf rdf:resource="#Crop"/>
+    <rdfs:label>Maize</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Rice">
+    <rdfs:subClassOf rdf:resource="#Crop"/>
+    <rdfs:label>Rice</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Wheat">
+    <rdfs:subClassOf rdf:resource="#Crop"/>
+    <rdfs:label>Wheat</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Tomato">
+    <rdfs:subClassOf rdf:resource="#Crop"/>
+    <rdfs:label>Tomato</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Potato">
+    <rdfs:subClassOf rdf:resource="#Crop"/>
+    <rdfs:label>Potato</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Soybean">
+    <rdfs:subClassOf rdf:resource="#Crop"/>
+    <rdfs:label>Soybean</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Disease">
+    <rdfs:label>Disease</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Pest">
+    <rdfs:label>Pest</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Symptom">
+    <rdfs:label>Symptom</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Treatment">
+    <rdfs:label>Treatment</rdfs:label>
+  </owl:Class>
+
+  <!-- Object Properties -->
+  <owl:ObjectProperty rdf:ID="hasSymptom">
+    <rdfs:label>has symptom</rdfs:label>
+    <rdfs:domain rdf:resource="#Crop"/>
+    <rdfs:range rdf:resource="#Symptom"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="affectedBy">
+    <rdfs:label>affected by</rdfs:label>
+    <rdfs:domain rdf:resource="#Crop"/>
+    <rdfs:range>
+      <owl:unionOf>
+        <owl:Class rdf:resource="#Disease"/>
+        <owl:Class rdf:resource="#Pest"/>
+      </owl:unionOf>
+    </rdfs:range>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="hasTreatment">
+    <rdfs:label>has treatment</rdfs:label>
+    <rdfs:domain>
+      <owl:unionOf>
+        <owl:Class rdf:resource="#Disease"/>
+        <owl:Class rdf:resource="#Pest"/>
+      </owl:unionOf>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="#Treatment"/>
+  </owl:ObjectProperty>
+
+  <!-- Symptoms -->
+  <Symptom rdf:ID="YellowStreaks">
+    <rdfs:label>Yellow streaks on leaves</rdfs:label>
+  </Symptom>
+
+  <Symptom rdf:ID="StuntedGrowth">
+    <rdfs:label>Stunted growth</rdfs:label>
+  </Symptom>
+
+  <Symptom rdf:ID="LeafBlight">
+    <rdfs:label>Leaf blight lesions</rdfs:label>
+  </Symptom>
+
+  <Symptom rdf:ID="WhitePowderyGrowth">
+    <rdfs:label>White powdery growth</rdfs:label>
+  </Symptom>
+
+  <Symptom rdf:ID="LeafRust">
+    <rdfs:label>Orange-brown pustules</rdfs:label>
+  </Symptom>
+
+  <Symptom rdf:ID="Wilting">
+    <rdfs:label>Wilting of plants</rdfs:label>
+  </Symptom>
+
+  <Symptom rdf:ID="YellowingLeaves">
+    <rdfs:label>Yellowing of leaves</rdfs:label>
+  </Symptom>
+
+  <Symptom rdf:ID="LeafCurling">
+    <rdfs:label>Leaf curling</rdfs:label>
+  </Symptom>
+
+  <Symptom rdf:ID="LeafMosaic">
+    <rdfs:label>Mosaic pattern on leaves</rdfs:label>
+  </Symptom>
+
+  <Symptom rdf:ID="LeafSpots">
+    <rdfs:label>Circular leaf spots</rdfs:label>
+  </Symptom>
+
+  <Symptom rdf:ID="FruitRot">
+    <rdfs:label>Fruit rot</rdfs:label>
+  </Symptom>
+
+  <Symptom rdf:ID="Honeydew">
+    <rdfs:label>Honeydew secretion</rdfs:label>
+  </Symptom>
+
+  <Symptom rdf:ID="LeafMinerDamage">
+    <rdfs:label>Leaf miner damage</rdfs:label>
+  </Symptom>
+
+  <Symptom rdf:ID="ChewedLeaves">
+    <rdfs:label>Chewed leaves</rdfs:label>
+  </Symptom>
+
+  <Symptom rdf:ID="StemBoring">
+    <rdfs:label>Stem boring damage</rdfs:label>
+  </Symptom>
+
+  <!-- Diseases -->
+  <Disease rdf:ID="MaizeStreakVirus">
+    <rdfs:label>Maize Streak Virus</rdfs:label>
+  </Disease>
+
+  <Disease rdf:ID="RiceBlast">
+    <rdfs:label>Rice Blast</rdfs:label>
+  </Disease>
+
+  <Disease rdf:ID="WheatRust">
+    <rdfs:label>Wheat Rust</rdfs:label>
+  </Disease>
+
+  <Disease rdf:ID="LateBlight">
+    <rdfs:label>Late Blight</rdfs:label>
+  </Disease>
+
+  <Disease rdf:ID="EarlyBlight">
+    <rdfs:label>Early Blight</rdfs:label>
+  </Disease>
+
+  <Disease rdf:ID="PowderyMildew">
+    <rdfs:label>Powdery Mildew</rdfs:label>
+  </Disease>
+
+  <Disease rdf:ID="FusariumWilt">
+    <rdfs:label>Fusarium Wilt</rdfs:label>
+  </Disease>
+
+  <Disease rdf:ID="BacterialBlight">
+    <rdfs:label>Bacterial Blight</rdfs:label>
+  </Disease>
+
+  <Disease rdf:ID="TomatoMosaicVirus">
+    <rdfs:label>Tomato Mosaic Virus</rdfs:label>
+  </Disease>
+
+  <Disease rdf:ID="SoybeanRust">
+    <rdfs:label>Soybean Rust</rdfs:label>
+  </Disease>
+
+  <Disease rdf:ID="SoybeanMosaicVirus">
+    <rdfs:label>Soybean Mosaic Virus</rdfs:label>
+  </Disease>
+
+  <!-- Pests -->
+  <Pest rdf:ID="FallArmyworm">
+    <rdfs:label>Fall Armyworm</rdfs:label>
+  </Pest>
+
+  <Pest rdf:ID="StemBorer">
+    <rdfs:label>Stem Borer</rdfs:label>
+  </Pest>
+
+  <Pest rdf:ID="Aphids">
+    <rdfs:label>Aphids</rdfs:label>
+  </Pest>
+
+  <Pest rdf:ID="Whiteflies">
+    <rdfs:label>Whiteflies</rdfs:label>
+  </Pest>
+
+  <Pest rdf:ID="LeafMiner">
+    <rdfs:label>Leaf Miner</rdfs:label>
+  </Pest>
+
+  <Pest rdf:ID="ColoradoPotatoBeetle">
+    <rdfs:label>Colorado Potato Beetle</rdfs:label>
+  </Pest>
+
+  <Pest rdf:ID="BrownPlantHopper">
+    <rdfs:label>Brown Plant Hopper</rdfs:label>
+  </Pest>
+
+</rdf:RDF>
