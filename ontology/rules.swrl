@@ -1,0 +1,93 @@
+# Disease Diagnosis Rules
+Crop(?c) ∧ hasSymptom(?c, YellowStreaks) ∧ hasSymptom(?c, StuntedGrowth) ∧ Maize(?c) → affectedBy(?c, MaizeStreakVirus)
+
+Crop(?c) ∧ hasSymptom(?c, LeafBlight) ∧ Rice(?c) → affectedBy(?c, RiceBlast)
+
+Crop(?c) ∧ hasSymptom(?c, LeafRust) ∧ Wheat(?c) → affectedBy(?c, WheatRust)
+
+Crop(?c) ∧ hasSymptom(?c, LeafSpots) ∧ hasSymptom(?c, FruitRot) ∧ Tomato(?c) → affectedBy(?c, LateBlight)
+
+Crop(?c) ∧ hasSymptom(?c, WhitePowderyGrowth) ∧ Tomato(?c) → affectedBy(?c, PowderyMildew)
+
+Crop(?c) ∧ hasSymptom(?c, Wilting) ∧ hasSymptom(?c, YellowingLeaves) ∧ Tomato(?c) → affectedBy(?c, FusariumWilt)
+
+Crop(?c) ∧ hasSymptom(?c, LeafSpots) ∧ Rice(?c) → affectedBy(?c, BacterialBlight)
+
+Crop(?c) ∧ hasSymptom(?c, LeafMosaic) ∧ Tomato(?c) → affectedBy(?c, TomatoMosaicVirus)
+
+Crop(?c) ∧ hasSymptom(?c, YellowStreaks) ∧ hasSymptom(?c, StuntedGrowth) ∧ Soybean(?c) → affectedBy(?c, SoybeanMosaicVirus)
+
+Crop(?c) ∧ hasSymptom(?c, LeafRust) ∧ Soybean(?c) → affectedBy(?c, SoybeanRust)
+
+Crop(?c) ∧ hasSymptom(?c, LeafSpots) ∧ Potato(?c) → affectedBy(?c, EarlyBlight)
+
+# Pest Diagnosis Rules
+Crop(?c) ∧ hasSymptom(?c, ChewedLeaves) ∧ Maize(?c) → affectedBy(?c, FallArmyworm)
+
+Crop(?c) ∧ hasSymptom(?c, StemBoring) ∧ hasSymptom(?c, Wilting) ∧ Maize(?c) → affectedBy(?c, StemBorer)
+
+Crop(?c) ∧ hasSymptom(?c, LeafCurling) ∧ hasSymptom(?c, Honeydew) ∧ Tomato(?c) → affectedBy(?c, Aphids)
+
+Crop(?c) ∧ hasSymptom(?c, YellowingLeaves) ∧ hasSymptom(?c, Honeydew) ∧ Tomato(?c) → affectedBy(?c, Whiteflies)
+
+Crop(?c) ∧ hasSymptom(?c, LeafMinerDamage) ∧ Tomato(?c) → affectedBy(?c, LeafMiner)
+
+Crop(?c) ∧ hasSymptom(?c, ChewedLeaves) ∧ Potato(?c) → affectedBy(?c, ColoradoPotatoBeetle)
+
+Crop(?c) ∧ hasSymptom(?c, YellowingLeaves) ∧ Rice(?c) → affectedBy(?c, BrownPlantHopper)
+
+# Treatment Recommendation Rules
+affectedBy(?c, MaizeStreakVirus) → hasTreatment(MaizeStreakVirus, ResistantMaizeVariety)
+affectedBy(?c, MaizeStreakVirus) → hasTreatment(MaizeStreakVirus, Sanitation)
+
+affectedBy(?c, RiceBlast) → hasTreatment(RiceBlast, Tebuconazole)
+affectedBy(?c, RiceBlast) → hasTreatment(RiceBlast, ResistantRiceVariety)
+
+affectedBy(?c, WheatRust) → hasTreatment(WheatRust, Tebuconazole)
+affectedBy(?c, WheatRust) → hasTreatment(WheatRust, ResistantWheatVariety)
+
+affectedBy(?c, LateBlight) → hasTreatment(LateBlight, CopperBasedFungicide)
+affectedBy(?c, LateBlight) → hasTreatment(LateBlight, Chlorothalonil)
+
+affectedBy(?c, PowderyMildew) → hasTreatment(PowderyMildew, SulfurFungicide)
+affectedBy(?c, PowderyMildew) → hasTreatment(PowderyMildew, NeemOil)
+
+affectedBy(?c, FusariumWilt) → hasTreatment(FusariumWilt, CropRotation)
+affectedBy(?c, FusariumWilt) → hasTreatment(FusariumWilt, Trichoderma)
+
+affectedBy(?c, FallArmyworm) → hasTreatment(FallArmyworm, Imidacloprid)
+affectedBy(?c, FallArmyworm) → hasTreatment(FallArmyworm, NeemOil)
+
+affectedBy(?c, StemBorer) → hasTreatment(StemBorer, Imidacloprid)
+affectedBy(?c, StemBorer) → hasTreatment(StemBorer, Sanitation)
+
+affectedBy(?c, Aphids) → hasTreatment(Aphids, Imidacloprid)
+affectedBy(?c, Aphids) → hasTreatment(Aphids, Ladybugs)
+
+affectedBy(?c, Whiteflies) → hasTreatment(Whiteflies, Imidacloprid)
+affectedBy(?c, Whiteflies) → hasTreatment(Whiteflies, NeemOil)
+
+affectedBy(?c, LeafMiner) → hasTreatment(LeafMiner, NeemOil)
+affectedBy(?c, LeafMiner) → hasTreatment(LeafMiner, Sanitation)
+
+affectedBy(?c, BacterialBlight) → hasTreatment(BacterialBlight, CopperBasedFungicide)
+affectedBy(?c, BacterialBlight) → hasTreatment(BacterialBlight, ResistantRiceVariety)
+
+affectedBy(?c, TomatoMosaicVirus) → hasTreatment(TomatoMosaicVirus, VirusFreeSeeds)
+affectedBy(?c, TomatoMosaicVirus) → hasTreatment(TomatoMosaicVirus, Sanitation)
+
+affectedBy(?c, SoybeanMosaicVirus) → hasTreatment(SoybeanMosaicVirus, ResistantSoybeanVariety)
+affectedBy(?c, SoybeanMosaicVirus) → hasTreatment(SoybeanMosaicVirus, Sanitation)
+affectedBy(?c, SoybeanMosaicVirus) → hasTreatment(SoybeanMosaicVirus, AphidControl)
+
+affectedBy(?c, SoybeanRust) → hasTreatment(SoybeanRust, Tebuconazole)
+affectedBy(?c, SoybeanRust) → hasTreatment(SoybeanRust, ResistantVarieties)
+
+affectedBy(?c, EarlyBlight) → hasTreatment(EarlyBlight, Chlorothalonil)
+affectedBy(?c, EarlyBlight) → hasTreatment(EarlyBlight, CropRotation)
+
+affectedBy(?c, ColoradoPotatoBeetle) → hasTreatment(ColoradoPotatoBeetle, Imidacloprid)
+affectedBy(?c, ColoradoPotatoBeetle) → hasTreatment(ColoradoPotatoBeetle, Handpicking)
+
+affectedBy(?c, BrownPlantHopper) → hasTreatment(BrownPlantHopper, Imidacloprid)
+affectedBy(?c, BrownPlantHopper) → hasTreatment(BrownPlantHopper, ResistantVarieties)
