@@ -1,0 +1,270 @@
+[
+  {
+    "id": 1,
+    "name": "CBB_Rule_1",
+    "conditions": [
+      "Water_soaked_lesions",
+      "Angular_leaf_spots"
+    ],
+    "conclusion": "CBB",
+    "confidence": 0.85,
+    "description": "If water-soaked lesions AND angular leaf spots \u2192 Cassava Bacterial Blight"
+  },
+  {
+    "id": 2,
+    "name": "CBB_Rule_2",
+    "conditions": [
+      "Yellowing_leaves",
+      "Black_stems"
+    ],
+    "conclusion": "CBB",
+    "confidence": 0.8,
+    "description": "If yellowing leaves AND black stems \u2192 Cassava Bacterial Blight"
+  },
+  {
+    "id": 3,
+    "name": "CBB_Rule_3",
+    "conditions": [
+      "Leaf_wilting",
+      "Water_soaked_lesions"
+    ],
+    "conclusion": "CBB",
+    "confidence": 0.75,
+    "description": "If leaf wilting AND water-soaked lesions \u2192 Cassava Bacterial Blight"
+  },
+  {
+    "id": 4,
+    "name": "CBB_Treatment_Rule",
+    "conditions": [
+      "CBB_diagnosed"
+    ],
+    "conclusion": "Apply_copper_fungicides",
+    "confidence": 0.9,
+    "description": "If CBB diagnosed \u2192 Apply copper-based fungicides"
+  },
+  {
+    "id": 5,
+    "name": "CBB_Severity_Rule",
+    "conditions": [
+      "CBB_diagnosed",
+      "High_infection_rate"
+    ],
+    "conclusion": "Remove_infected_plants",
+    "confidence": 0.95,
+    "description": "If CBB AND high infection rate \u2192 Remove infected plants immediately"
+  },
+  {
+    "id": 6,
+    "name": "CBSD_Rule_1",
+    "conditions": [
+      "Brown_streaks_on_stems",
+      "Yellowing_between_veins"
+    ],
+    "conclusion": "CBSD",
+    "confidence": 0.88,
+    "description": "If brown streaks on stems AND yellowing between veins \u2192 CBSD"
+  },
+  {
+    "id": 7,
+    "name": "CBSD_Rule_2",
+    "conditions": [
+      "Root_necrosis",
+      "Chlorotic_mottling"
+    ],
+    "conclusion": "CBSD",
+    "confidence": 0.85,
+    "description": "If root necrosis AND chlorotic mottling \u2192 CBSD"
+  },
+  {
+    "id": 8,
+    "name": "CBSD_Rule_3",
+    "conditions": [
+      "Stunted_growth",
+      "Brown_streaks_on_stems"
+    ],
+    "conclusion": "CBSD",
+    "confidence": 0.82,
+    "description": "If stunted growth AND brown streaks on stems \u2192 CBSD"
+  },
+  {
+    "id": 9,
+    "name": "CBSD_Treatment_Rule",
+    "conditions": [
+      "CBSD_diagnosed"
+    ],
+    "conclusion": "Use_virus_free_material",
+    "confidence": 0.92,
+    "description": "If CBSD diagnosed \u2192 Use virus-free planting material"
+  },
+  {
+    "id": 10,
+    "name": "CBSD_Vector_Rule",
+    "conditions": [
+      "CBSD_diagnosed",
+      "Whitefly_present"
+    ],
+    "conclusion": "Control_whiteflies",
+    "confidence": 0.9,
+    "description": "If CBSD AND whiteflies present \u2192 Control whitefly vectors"
+  },
+  {
+    "id": 11,
+    "name": "CGM_Rule_1",
+    "conditions": [
+      "Green_mottling",
+      "Irregular_leaf_patterns"
+    ],
+    "conclusion": "CGM",
+    "confidence": 0.8,
+    "description": "If green mottling AND irregular leaf patterns \u2192 CGM"
+  },
+  {
+    "id": 12,
+    "name": "CGM_Rule_2",
+    "conditions": [
+      "Distorted_leaves",
+      "Mild_yellowing"
+    ],
+    "conclusion": "CGM",
+    "confidence": 0.75,
+    "description": "If distorted leaves AND mild yellowing \u2192 CGM"
+  },
+  {
+    "id": 13,
+    "name": "CGM_Treatment_Rule",
+    "conditions": [
+      "CGM_diagnosed"
+    ],
+    "conclusion": "Remove_infected_plants",
+    "confidence": 0.85,
+    "description": "If CGM diagnosed \u2192 Remove infected plants"
+  },
+  {
+    "id": 14,
+    "name": "CGM_Vector_Rule",
+    "conditions": [
+      "CGM_diagnosed",
+      "Thrips_present"
+    ],
+    "conclusion": "Control_thrips",
+    "confidence": 0.88,
+    "description": "If CGM AND thrips present \u2192 Control thrips"
+  },
+  {
+    "id": 15,
+    "name": "CGM_Prevention_Rule",
+    "conditions": [
+      "CGM_risk_high"
+    ],
+    "conclusion": "Apply_preventive_spacing",
+    "confidence": 0.8,
+    "description": "If CGM risk high \u2192 Ensure proper plant spacing"
+  },
+  {
+    "id": 16,
+    "name": "CMD_Rule_1",
+    "conditions": [
+      "Mosaic_patterns",
+      "Leaf_distortion"
+    ],
+    "conclusion": "CMD",
+    "confidence": 0.9,
+    "description": "If mosaic patterns AND leaf distortion \u2192 CMD"
+  },
+  {
+    "id": 17,
+    "name": "CMD_Rule_2",
+    "conditions": [
+      "Yellow_green_mottling",
+      "Severe_stunting"
+    ],
+    "conclusion": "CMD",
+    "confidence": 0.87,
+    "description": "If yellow-green mottling AND severe stunting \u2192 CMD"
+  },
+  {
+    "id": 18,
+    "name": "CMD_Rule_3",
+    "conditions": [
+      "Reduced_leaf_size",
+      "Mosaic_patterns"
+    ],
+    "conclusion": "CMD",
+    "confidence": 0.83,
+    "description": "If reduced leaf size AND mosaic patterns \u2192 CMD"
+  },
+  {
+    "id": 19,
+    "name": "CMD_Treatment_Rule",
+    "conditions": [
+      "CMD_diagnosed"
+    ],
+    "conclusion": "Use_virus_free_cuttings",
+    "confidence": 0.93,
+    "description": "If CMD diagnosed \u2192 Use virus-free cassava cuttings"
+  },
+  {
+    "id": 20,
+    "name": "CMD_Vector_Rule",
+    "conditions": [
+      "CMD_diagnosed",
+      "Whitefly_present"
+    ],
+    "conclusion": "Control_whitefly_populations",
+    "confidence": 0.91,
+    "description": "If CMD AND whiteflies present \u2192 Control whitefly populations"
+  },
+  {
+    "id": 21,
+    "name": "General_Prevention_Rule_1",
+    "conditions": [
+      "Early_season"
+    ],
+    "conclusion": "Use_certified_planting_material",
+    "confidence": 0.85,
+    "description": "If early season \u2192 Use certified planting material"
+  },
+  {
+    "id": 22,
+    "name": "General_Prevention_Rule_2",
+    "conditions": [
+      "High_whitefly_population"
+    ],
+    "conclusion": "Apply_preventive_insecticides",
+    "confidence": 0.88,
+    "description": "If high whitefly population \u2192 Apply preventive insecticides"
+  },
+  {
+    "id": 23,
+    "name": "Severity_Escalation_Rule",
+    "conditions": [
+      "Disease_diagnosed",
+      "Infection_rate_above_50"
+    ],
+    "conclusion": "Immediate_field_management",
+    "confidence": 0.95,
+    "description": "If disease diagnosed AND infection rate > 50% \u2192 Immediate field management required"
+  },
+  {
+    "id": 24,
+    "name": "Healthy_Maintenance_Rule",
+    "conditions": [
+      "Uniform_green_color",
+      "No_lesions",
+      "Normal_growth"
+    ],
+    "conclusion": "Healthy",
+    "confidence": 0.95,
+    "description": "If uniform green, no lesions, normal growth \u2192 Healthy"
+  },
+  {
+    "id": 25,
+    "name": "Integrated_Management_Rule",
+    "conditions": [
+      "Multiple_diseases_present"
+    ],
+    "conclusion": "Apply_integrated_disease_management",
+    "confidence": 0.9,
+    "description": "If multiple diseases present \u2192 Apply integrated disease management"
+  }
+]
