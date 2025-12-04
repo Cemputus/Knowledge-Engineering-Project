@@ -1,0 +1,18 @@
+# Agriculture Ontology Reasoner - Requirements
+# Python 3.7 or higher is required
+
+# No external dependencies required
+# The project uses only Python standard library modules:
+# - os
+# - sys
+# - uuid
+# - argparse
+
+# Optional: If you want to use actual OWL/RDF reasoning in the future, you might consider:
+# rdflib>=6.0.0
+# owlready2>=0.40
+
+# For development/testing (optional):
+# pytest>=7.0.0
+# pytest-cov>=4.0.0
+
