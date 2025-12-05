@@ -4,6 +4,70 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
+<<<<<<< HEAD
+=======
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Uniformgreencolor">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Uniform green color</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Watermanagement">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
+    <rdfs:label>Water management</rdfs:label>
+    <rdfs:comment>Maintain proper irrigation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Brownstreaksonstems">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Brown streaks on stems</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Virusfreeplantingmaterial">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
+    <rdfs:label>Virus free planting material</rdfs:label>
+    <rdfs:comment>Use certified virus-free planting material</rdfs:comment>
+    <rdfs:comment>Use certified virus-free cassava cuttings</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#CassavaBacterialBlight">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Disease"/>
+    <rdfs:label>CBB</rdfs:label>
+    <rdfs:comment>Cassava disease: CBB</rdfs:comment>
+    <agro:hasSymptom rdf:resource="http://www.agro-ontology.org/#Water-soakedlesions"/>
+    <agro:hasSymptom rdf:resource="http://www.agro-ontology.org/#Angularleafspots"/>
+    <agro:hasSymptom rdf:resource="http://www.agro-ontology.org/#Yellowingleaves"/>
+    <agro:hasSymptom rdf:resource="http://www.agro-ontology.org/#Leafwilting"/>
+    <agro:hasSymptom rdf:resource="http://www.agro-ontology.org/#Blackstems"/>
+    <agro:hasTreatment rdf:resource="http://www.agro-ontology.org/#Copperbasedfungicides"/>
+    <agro:hasTreatment rdf:resource="http://www.agro-ontology.org/#Removeinfectedplants"/>
+    <agro:hasTreatment rdf:resource="http://www.agro-ontology.org/#Croprotation"/>
+    <agro:hasTreatment rdf:resource="http://www.agro-ontology.org/#Resistantvarieties"/>
+    <agro:hasTreatment rdf:resource="http://www.agro-ontology.org/#Sanitation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Earlydetection">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
+    <rdfs:label>Early detection</rdfs:label>
+    <rdfs:comment>Monitor fields regularly for early detection</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Vectorcontrol">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
+    <rdfs:label>Vector control</rdfs:label>
+    <rdfs:comment>Control whitefly vectors using insecticides</rdfs:comment>
+    <rdfs:comment>Control insect vectors</rdfs:comment>
+    <rdfs:comment>Control whitefly populations</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Earlyharvesting">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
+    <rdfs:label>Early harvesting</rdfs:label>
+    <rdfs:comment>Harvest early if infection is detected</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Removeinfectedplants">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
+    <rdfs:label>Remove infected plants</rdfs:label>
+    <rdfs:comment>Remove and destroy infected plants immediately</rdfs:comment>
+    <rdfs:comment>Remove and destroy infected plants</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Blackstems">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Black stems</rdfs:label>
+  </rdf:Description>
+>>>>>>> origin/edube
   <rdf:Description rdf:about="http://www.agro-ontology.org/#CassavaMosaicDisease">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Disease"/>
     <rdfs:label>CMD</rdfs:label>
@@ -22,10 +86,13 @@
     <agro:vectorPest rdf:resource="http://www.agro-ontology.org/#Aphids"/>
     <agro:vectorPest rdf:resource="http://www.agro-ontology.org/#Mealybugs"/>
   </rdf:Description>
+<<<<<<< HEAD
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Distortedleaves">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
     <rdfs:label>Distorted leaves</rdfs:label>
   </rdf:Description>
+=======
+>>>>>>> origin/edube
   <rdf:Description rdf:about="http://www.agro-ontology.org/#CassavaBrownStreakDisease">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Disease"/>
     <rdfs:label>CBSD</rdfs:label>
@@ -42,6 +109,7 @@
     <agro:hasTreatment rdf:resource="http://www.agro-ontology.org/#Earlydetection"/>
     <agro:vectorPest rdf:resource="http://www.agro-ontology.org/#Whitefly"/>
   </rdf:Description>
+<<<<<<< HEAD
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Whitefly">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Pest"/>
     <rdfs:label>Whitefly</rdfs:label>
@@ -54,6 +122,8 @@
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
     <rdfs:label>Reduced leaf size</rdfs:label>
   </rdf:Description>
+=======
+>>>>>>> origin/edube
   <rdf:Description rdf:about="http://www.agro-ontology.org/#CassavaGreenMottle">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Disease"/>
     <rdfs:label>CGM</rdfs:label>
@@ -71,6 +141,7 @@
     <agro:vectorPest rdf:resource="http://www.agro-ontology.org/#Thrips"/>
     <agro:vectorPest rdf:resource="http://www.agro-ontology.org/#Mites"/>
   </rdf:Description>
+<<<<<<< HEAD
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Nolesions">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
     <rdfs:label>No lesions</rdfs:label>
@@ -78,19 +149,143 @@
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Prevention">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+=======
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Regularmonitoring">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
+    <rdfs:label>Regular monitoring</rdfs:label>
+    <rdfs:comment>Monitor for early signs of disease</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Stuntedgrowth">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Stunted growth</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Angularleafspots">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Angular leaf spots</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Reducedleafsize">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Reduced leaf size</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Whitefly">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Pest"/>
+    <rdfs:label>Whitefly</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Mealybugs">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Pest"/>
+    <rdfs:label>Mealybugs</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Irregularleafpatterns">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Irregular leaf patterns</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Disease">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Resistantvarieties">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
+    <rdfs:label>Resistant varieties</rdfs:label>
+    <rdfs:comment>Use disease-resistant cassava varieties</rdfs:comment>
+    <rdfs:comment>Plant CBSD-resistant cassava varieties</rdfs:comment>
+    <rdfs:comment>Use resistant cassava varieties</rdfs:comment>
+    <rdfs:comment>Plant CMD-resistant varieties</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Leafwilting">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Leaf wilting</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Distortedleaves">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Distorted leaves</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Rootnecrosis">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Root necrosis</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Leafdistortion">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Leaf distortion</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Yellowgreenmottling">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Yellow green mottling</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Mites">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Pest"/>
+    <rdfs:label>Mites</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Properspacing">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
+    <rdfs:label>Proper spacing</rdfs:label>
+    <rdfs:comment>Ensure proper plant spacing for air circulation</rdfs:comment>
+  </rdf:Description>
+>>>>>>> origin/edube
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Properleafshape">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
     <rdfs:label>Proper leaf shape</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.agro-ontology.org/#Croprotation">
+<<<<<<< HEAD
+=======
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Greenmottling">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Green mottling</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Normalgrowth">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Normal growth</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Sanitation">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
-    <rdfs:label>Crop rotation</rdfs:label>
-    <rdfs:comment>Practice crop rotation with non-host crops</rdfs:comment>
+    <rdfs:label>Sanitation</rdfs:label>
+    <rdfs:comment>Maintain field sanitation and remove plant debris</rdfs:comment>
+    <rdfs:comment>Maintain clean field conditions</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Preventivemeasures">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
     <rdfs:label>Preventive measures</rdfs:label>
     <rdfs:comment>Apply preventive measures</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Severestunting">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Severe stunting</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Propernutrition">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
+    <rdfs:label>Proper nutrition</rdfs:label>
+    <rdfs:comment>Ensure adequate soil nutrition</rdfs:comment>
+  </rdf:Description>
+>>>>>>> origin/edube
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Croprotation">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
+    <rdfs:label>Crop rotation</rdfs:label>
+    <rdfs:comment>Practice crop rotation with non-host crops</rdfs:comment>
+  </rdf:Description>
+<<<<<<< HEAD
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Preventivemeasures">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
+    <rdfs:label>Preventive measures</rdfs:label>
+    <rdfs:comment>Apply preventive measures</rdfs:comment>
+=======
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Yellowingbetweenveins">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Yellowing between veins</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Prevention">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Water-soakedlesions">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Water-soaked lesions</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Maintainhealth">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
+    <rdfs:label>Maintain health</rdfs:label>
+    <rdfs:comment>Continue good agricultural practices</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Mosaicpatterns">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Mosaic patterns</rdfs:label>
+>>>>>>> origin/edube
   </rdf:Description>
   <rdf:Description rdf:about="http://www.agro-ontology.org/#HealthyCassava">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Disease"/>
@@ -107,6 +302,7 @@
     <agro:hasTreatment rdf:resource="http://www.agro-ontology.org/#Propernutrition"/>
     <agro:hasTreatment rdf:resource="http://www.agro-ontology.org/#Watermanagement"/>
   </rdf:Description>
+<<<<<<< HEAD
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Vectorcontrol">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
     <rdfs:label>Vector control</rdfs:label>
@@ -244,11 +440,14 @@
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
     <rdfs:label>Angular leaf spots</rdfs:label>
   </rdf:Description>
+=======
+>>>>>>> origin/edube
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Copperbasedfungicides">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
     <rdfs:label>Copper based fungicides</rdfs:label>
     <rdfs:comment>Apply copper-based fungicides every 7-10 days</rdfs:comment>
   </rdf:Description>
+<<<<<<< HEAD
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Leafwilting">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
     <rdfs:label>Leaf wilting</rdfs:label>
@@ -256,11 +455,17 @@
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Leafdistortion">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
     <rdfs:label>Leaf distortion</rdfs:label>
+=======
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Mildyellowing">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Mild yellowing</rdfs:label>
+>>>>>>> origin/edube
   </rdf:Description>
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Yellowingleaves">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
     <rdfs:label>Yellowing leaves</rdfs:label>
   </rdf:Description>
+<<<<<<< HEAD
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Removeinfectedplants">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Treatment"/>
     <rdfs:label>Remove infected plants</rdfs:label>
@@ -286,15 +491,45 @@
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
     <rdfs:label>Water-soaked lesions</rdfs:label>
   </rdf:Description>
+=======
+>>>>>>> origin/edube
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Reducedphotosynthesis">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
     <rdfs:label>Reduced photosynthesis</rdfs:label>
   </rdf:Description>
+<<<<<<< HEAD
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Cassava">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Disease">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+=======
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Aphids">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Pest"/>
+    <rdfs:label>Aphids</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Healthyroots">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Healthy roots</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Nolesions">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>No lesions</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Symptom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Cassava">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Thrips">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Pest"/>
+    <rdfs:label>Thrips</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.agro-ontology.org/#Chloroticmottling">
+    <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
+    <rdfs:label>Chlorotic mottling</rdfs:label>
+>>>>>>> origin/edube
   </rdf:Description>
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Treatment">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -302,8 +537,11 @@
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Pest">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+<<<<<<< HEAD
   <rdf:Description rdf:about="http://www.agro-ontology.org/#Irregularleafpatterns">
     <rdf:type rdf:resource="http://www.agro-ontology.org/#Symptom"/>
     <rdfs:label>Irregular leaf patterns</rdfs:label>
   </rdf:Description>
+=======
+>>>>>>> origin/edube
 </rdf:RDF>

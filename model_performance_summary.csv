@@ -1,0 +1,4 @@
+Model,Accuracy (%),Precision (%),Recall (%),F1-Score (%)
+Baseline_CNN,49.56,49.74,49.56,37.94
+MobileNetV2,72.44,72.22,72.44,71.61
+EfficientNetB0,47.00,22.09,47.00,30.05

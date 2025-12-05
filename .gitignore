@@ -19,4 +19,15 @@ best_model.h5
 *.tar
 
 # Large ontology zip file
+<<<<<<< HEAD
 ontology.zip
+=======
+ontology.zip
+
+
+
+
+
+
+
+>>>>>>> origin/edube
