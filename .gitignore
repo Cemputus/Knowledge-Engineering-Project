@@ -19,20 +19,12 @@ best_model.h5
 *.tar
 
 # Large ontology zip file
-<<<<<<< HEAD
 ontology.zip
-=======
-ontology.zip
-
 
 # Tensorflow / training logs
 logs/
 *.tfevents*
 
-
-
-
-
-
-
->>>>>>> origin/edube
+# Training logs and CSV files
+training_log.csv
+model_performance_summary.csv
