@@ -715,8 +715,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Edube20Emmanuel** - *Initial work* - [GitHub](https://github.com/Cemputus)
-
+- **Emmanuel Nsubuga** 
+- **Lynn Amoit**
+- **Edube Emmanuel Gulaba**
+- **Tusiime Ronald**
+- **Rugogamu Noela**
+- **Anita Namaganda**
 ---
 
 ## 🙏 Acknowledgments
@@ -779,5 +783,396 @@ If you find this project useful, please consider giving it a ⭐ on GitHub!
 
 ---
 
-*Last Updated: December 2024*
+*Last Updated: December 2025*
 
+
+
+# Smart Agriculture Advisor 🌾
+
+A comprehensive **Hybrid Intelligent System** that combines **Knowledge Engineering (KE)** and **Deep Learning (DL)** for automated cassava disease diagnosis and agricultural advisory services.
+
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.13+-orange.svg)](https://www.tensorflow.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+---
+
+## 📋 Table of Contents
+
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [System Architecture](#system-architecture)
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+  - [Streamlit Web Interface](#streamlit-web-interface)
+  - [Jupyter Notebook](#jupyter-notebook)
+  - [Command Line Interface](#command-line-interface)
+- [Technologies Used](#technologies-used)
+- [Dataset Information](#dataset-information)
+- [Model Performance](#model-performance)
+- [Knowledge Engineering Components](#knowledge-engineering-components)
+- [Deep Learning Components](#deep-learning-components)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+---
+
+## 🎯 Overview
+
+The **Smart Agriculture Advisor** is an intelligent system designed to help farmers and agricultural experts diagnose cassava diseases through:
+
+1. **Image-based Diagnosis**: Using deep learning models to analyze leaf images
+2. **Symptom-based Diagnosis**: Using expert rules and knowledge engineering for diagnosis based on observed symptoms
+3. **Hybrid Integration**: Combining both approaches for more accurate and explainable results
+
+### Problem Statement
+
+Cassava is a critical food security crop in many regions, but it's susceptible to various diseases:
+- **CBB** (Cassava Bacterial Blight)
+- **CBSD** (Cassava Brown Streak Disease)
+- **CGM** (Cassava Green Mottle)
+- **CMD** (Cassava Mosaic Disease)
+- **Healthy** plants
+
+Early and accurate diagnosis is crucial for effective disease management and yield protection.
+
+### Solution Approach
+
+This project implements a **hybrid intelligent system** that:
+- Uses **Deep Learning** (CNNs) for visual pattern recognition in leaf images
+- Uses **Knowledge Engineering** (expert rules, ontologies) for symptom-based reasoning
+- Combines both approaches for robust, explainable diagnosis
+
+---
+
+## ✨ Key Features
+
+### 🖼️ Image-Based Diagnosis
+- **Multiple Deep Learning Models**: Baseline CNN, MobileNetV2, EfficientNetB0
+- **Real-time Prediction**: Upload images and get instant disease classification
+- **Confidence Scores**: See prediction probabilities for all disease classes
+- **Visualization**: View preprocessed images and model predictions
+
+### 🔍 Symptom-Based Diagnosis
+- **Expert Rule System**: 25+ expert rules for disease diagnosis
+- **Interactive Symptom Selection**: Choose symptoms from a comprehensive list
+- **Treatment Recommendations**: Get specific treatment advice based on diagnosis
+- **Multi-crop Support**: Works with Maize, Rice, Wheat, Tomato, Potato, Soybean
+
+### 📊 Statistics & Analytics
+- **Dataset Statistics**: View class distribution, image counts, and data quality metrics
+- **Model Performance**: Compare accuracy, precision, recall, and F1-scores
+- **Visual Analytics**: Color distribution analysis, confusion matrices, training history
+
+### 🎨 Modern User Interface
+- **Streamlit Web App**: Beautiful, responsive, and interactive
+- **Multi-page Navigation**: Easy access to all features
+- **Real-time Updates**: Instant feedback on predictions and recommendations
+- **Mobile-friendly**: Responsive design works on all devices
+
+### 🔧 Advanced Features
+- **Data Augmentation**: Multiple augmentation strategies for improved model generalization
+- **Image Quality Validation**: Automatic checks for corrupted or invalid images
+- **Class Imbalance Handling**: Weighted loss functions and balanced sampling
+- **Transfer Learning**: Pre-trained models fine-tuned for cassava disease detection
+
+---
+
+## 🏗️ System Architecture
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                  Smart Agriculture Advisor                   │
+│                    Hybrid Intelligent System                  │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                ┌─────────────┴─────────────┐
+                │                           │
+    ┌───────────▼──────────┐    ┌───────────▼──────────┐
+    │  Knowledge           │    │  Deep Learning      │
+    │  Engineering (KE)    │    │  (DL)               │
+    │                      │    │                     │
+    │  • Ontology          │    │  • CNN Models       │
+    │  • Expert Rules      │    │  • Transfer Learning│
+    │  • Reasoning Engine  │    │  • Image Processing│
+    │  • Rule Inference    │    │  • Data Augmentation│
+    └───────────┬──────────┘    └───────────┬──────────┘
+                │                           │
+                └─────────────┬─────────────┘
+                              │
+                    ┌─────────▼─────────┐
+                    │  Hybrid Fusion    │
+                    │  & Integration    │
+                    └─────────┬─────────┘
+                              │
+                    ┌─────────▼─────────┐
+                    │  User Interface   │
+                    │  (Streamlit)      │
+                    └───────────────────┘
+```
+
+### Architecture Components
+
+1. **Knowledge Engineering Layer**
+   - OWL/RDF Ontology for agricultural concepts
+   - Expert rules encoded in JSON format
+   - Forward chaining inference engine
+   - Treatment recommendation system
+
+2. **Deep Learning Layer**
+   - Convolutional Neural Networks (CNNs)
+   - Transfer learning with MobileNetV2 and EfficientNetB0
+   - Data preprocessing and augmentation pipeline
+   - Model training and evaluation framework
+
+3. **Integration Layer**
+   - Combines DL predictions with KE reasoning
+   - Confidence score fusion
+   - Explainable AI through rule-based justifications
+
+4. **Presentation Layer**
+   - Streamlit web interface
+   - Jupyter notebook for development
+   - Command-line interface for batch processing
+
+---
+
+## 🚀 Installation
+
+### Prerequisites
+
+- **Python 3.8+** (Python 3.10+ recommended)
+- **Git** for cloning the repository
+- **8GB+ RAM** (16GB recommended for training)
+- **GPU** (optional, but recommended for faster training)
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/Cemputus/Knowledge-Engineering-Project.git
+cd Knowledge-Engineering-Project
+```
+
+### Step 2: Create Virtual Environment
+
+**Windows:**
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+**Linux/Mac:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Step 3: Install Dependencies
+
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+**Note**: If you encounter issues with TensorFlow, you may need to install it separately:
+
+```bash
+pip install tensorflow>=2.13.0
+```
+
+### Step 4: Verify Installation
+
+```bash
+python -c "import tensorflow as tf; print('TensorFlow:', tf.__version__)"
+python -c "import streamlit as st; print('Streamlit installed')"
+```
+
+### Step 5: Download Dataset (Optional)
+
+The dataset should be placed in the `cassava-disease/` directory with the following structure:
+
+```
+cassava-disease/
+├── train/
+│   ├── cbb/
+│   ├── cbsd/
+│   ├── cgm/
+│   ├── cmd/
+│   └── healthy/
+├── test/
+└── extraimages/
+```
+
+**Note**: Large files (>24MB) including model files (`.h5`) are excluded from git. You'll need to train the models or download pre-trained models separately.
+
+---
+
+## 📁 Project Structure
+
+```
+Knowledge-Engineering-Project/
+│
+├── 📄 README.md                          # This file
+├── 📄 requirements.txt                   # Python dependencies
+├── 📄 .gitignore                         # Git ignore rules
+│
+├── 📓 SmartAgricultureAdvisor.ipynb       # Main Jupyter notebook
+├── 📓 KnowledgeEngineering.ipynb         # Knowledge engineering notebook
+│
+├── 🖥️ streamlit_ui.py                    # Streamlit web application
+│
+├── 📊 model_performance_summary.csv       # Model evaluation results
+│
+├── 🧠 Models/                            # Trained model files (not in git)
+│   ├── baseline_cnn_model.h5
+│   ├── mobilenet_cassava_model.h5
+│   ├── efficientnet_cassava_model.h5
+│   └── best_model.h5
+│
+├── 📚 ontology/                          # Knowledge Engineering components
+│   ├── reasoner.py                       # Main reasoning engine
+│   ├── agri_ontology.rdf                 # OWL/RDF ontology
+│   ├── rules.swrl                        # SWRL rules
+│   ├── test_examples.py                  # Test cases
+│   └── requirements.txt                  # Ontology-specific dependencies
+│
+├── 📋 expert_rules.json                   # Expert rules for diagnosis
+├── 🌾 agriculture_ontology.rdf           # Root ontology file
+│
+├── 📁 cassava-disease/                   # Dataset directory
+│   ├── train/                            # Training images
+│   │   ├── cbb/                          # Cassava Bacterial Blight
+│   │   ├── cbsd/                         # Cassava Brown Streak Disease
+│   │   ├── cgm/                          # Cassava Green Mottle
+│   │   ├── cmd/                          # Cassava Mosaic Disease
+│   │   └── healthy/                      # Healthy leaves
+│   ├── test/                             # Test images
+│   └── extraimages/                      # Additional unlabeled images
+│
+└── 📄 2025_UCU-CSE-EXAMS(...).pdf        # Project requirements document
+```
+
+---
+
+## 💻 Usage
+
+### Streamlit Web Interface
+
+The easiest way to use the system is through the Streamlit web interface:
+
+```bash
+streamlit run streamlit_ui.py
+```
+
+This will start a local web server (usually at `http://localhost:8501`). The interface includes:
+
+#### **Pages Available:**
+
+1. **🏠 Home**
+   - System overview
+   - Quick start guide
+   - Feature highlights
+
+2. **🖼️ Image Diagnosis**
+   - Upload cassava leaf images
+   - Get instant disease predictions
+   - View confidence scores
+   - See treatment recommendations
+
+3. **🔍 Symptom Diagnosis**
+   - Select crop type
+   - Choose observed symptoms
+   - Get expert-based diagnosis
+   - Receive treatment advice
+
+4. **📊 Statistics**
+   - Dataset statistics
+   - Class distribution
+   - Model performance metrics
+   - Visual analytics
+
+5. **📋 Expert Rules**
+   - Browse all expert rules
+   - Understand rule logic
+   - View confidence scores
+
+6. **ℹ️ About**
+   - Project information
+   - System architecture
+   - Technology stack
+
+### Jupyter Notebook
+
+For development, experimentation, and training:
+
+1. **Start Jupyter:**
+   ```bash
+   jupyter notebook
+   ```
+
+2. **Open `SmartAgricultureAdvisor.ipynb`**
+
+3. **Follow the execution order:**
+   - Section 1-3: Setup and imports
+   - Section 4: Data exploration
+   - Section 5: Knowledge engineering setup
+   - Section 6: Deep learning setup and training
+   - Section 7: Hybrid integration
+   - Section 8: Evaluation
+   - Section 9: Case studies
+
+**Important**: Execute cells in order as some sections depend on previous ones.
+
+### Command Line Interface
+
+#### Using the Knowledge Engineering Reasoner
+
+**Interactive Mode:**
+```bash
+cd ontology
+python reasoner.py --interactive
+```
+
+**Command Line Mode:**
+```bash
+python reasoner.py --crop Maize --symptoms "YellowStreaks,StuntedGrowth"
+```
+
+**Example Diagnoses:**
+```bash
+# Maize disease
+python reasoner.py --crop Maize --symptoms "YellowStreaks,StuntedGrowth"
+# Output: Maize Streak Virus
+
+# Tomato disease
+python reasoner.py --crop Tomato --symptoms "WhitePowderyGrowth"
+# Output: Powdery Mildew
+
+# Rice disease
+python reasoner.py --crop Rice --symptoms "LeafBlight"
+# Output: Rice Blast
+```
+
+#### Testing the Reasoner
+
+```bash
+cd ontology
+python test_examples.py
+```
+
+---
+
+## 🛠️ Technologies Used
+
+### Deep Learning
+- **TensorFlow 2.13+**: Deep learning framework
+- **Keras**: High-level neural network API
+- **MobileNetV2**: Lightweight CNN architecture
+- **EfficientNetB0**: Efficient CNN architecture
+
+### Knowledge Engineering
+- **OWL/RDF**: Ontology representation
+- **SWRL**: Semantic Web Rule Language
