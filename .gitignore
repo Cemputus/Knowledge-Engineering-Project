@@ -25,6 +25,11 @@ ontology.zip
 ontology.zip
 
 
+# Tensorflow / training logs
+logs/
+*.tfevents*
+
+
 
 
 
